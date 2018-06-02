@@ -1,21 +1,12 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { NavMenu } from '../src/Component/NavMenu'
+import { Layout } from './Layouts/Layout'
 
-export class App extends Component {
+class App extends Component {
   render() {
     return (
-      <div> 
-          <div>
-              <div> 
-                  <NavMenu />
-              </div>
-              <div>
-                  { this.props.children }
-              </div>
-          </div>
-      </div>
+        <Layout />
     );
   }
 }

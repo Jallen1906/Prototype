@@ -1,14 +1,17 @@
-import * as React from 'react';
-import { Route } from 'react-router-dom';
-import { App } from '../App';
-import { DicePage } from '../Pages/DicePage';
-import { HomePage } from '../Pages/HomePage';
-import { LogPage } from '../Pages/LogPage';
-import { CharacterPage } from '../Pages/CharacterPage';
+import React from 'react'
+import { Switch, Route } from 'react-router-dom'
+import CharacterPage from '../Pages/CharacterPage'
+import DicePage from '../Pages/DicePage'
+import HomePage from '../Pages/HomePage'
+import SessionLog from '../Pages/SessionLogPage'
 
-export const routes = <App>
-        <Route exact path='/' component={ HomePage } />
-        <Route exact path='/dice' component={ DicePage } />
-        <Route exact path='/log' component={ LogPage } />
-        <Route exact path='/character' component={ CharacterPage } />
-    </App>;
+const Routes = () => (
+<Switch>
+    <Route exact path='/' component={HomePage}/>
+    <Route path='/dice' component={DicePage}/>
+    <Route path='/character' component={CharacterPage}/>
+    <Route path='/session' component={SessionLog}/>
+</Switch>
+)
+
+export default Routes
