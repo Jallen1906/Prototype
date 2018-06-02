@@ -28,7 +28,16 @@
     <Content Include="src\logo.svg" />
     <Compile Include="src\App.js" />
     <Compile Include="src\App.test.js" />
+    <Compile Include="src\Components\AppBar.js" />
+    <Compile Include="src\Components\Drawer.js" />
+    <Compile Include="src\Components\NotePaper.js" />
+    <Compile Include="src\Components\ProgressBarCard.js" />
+    <Compile Include="src\Components\TableCard.js" />
+    <Compile Include="src\Components\TableCardV2.js" />
+    <Compile Include="src\Data\DataStore.js" />
     <Compile Include="src\index.js" />
+    <Compile Include="src\Layouts\Layout.js" />
+    <Compile Include="src\Pages\SessionLogPage.js" />
     <Compile Include="src\registerServiceWorker.js" />
     <Compile Include="src\Component\NavMenu.js" />
     <Compile Include="src\Pages\CharacterPage.js" />
@@ -42,6 +51,9 @@
     <Folder Include="public" />
     <Folder Include="src" />
     <Folder Include="src\Component" />
+    <Folder Include="src\Components\" />
+    <Folder Include="src\Data\" />
+    <Folder Include="src\Layouts\" />
     <Folder Include="src\Pages" />
     <Folder Include="src\Routing" />
   </ItemGroup>
