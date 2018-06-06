@@ -17,6 +17,10 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Compile Include="src\Components\FloatingAddButton.js" />
+    <Compile Include="src\Components\SessionModal.js" />
+    <Compile Include="src\Components\SessionSnackBar.js" />
+    <Compile Include="src\Services\CharacterInfoService.js" />
     <Content Include="package-lock.json" />
     <Content Include="package.json" />
     <Content Include="README.md" />
@@ -56,6 +60,7 @@
     <Folder Include="src\Layouts\" />
     <Folder Include="src\Pages" />
     <Folder Include="src\Routing" />
+    <Folder Include="src\Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
