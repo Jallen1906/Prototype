@@ -1,23 +1,24 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { NavMenu } from '../src/Component/NavMenu'
+import { Layout } from './Layouts/Layout'
+import { withTheme } from '@material-ui/core/styles'
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 
-export class App extends Component {
+const theme = createMuiTheme({
+  palette: {
+    type: 'light',
+  },
+})
+
+class App extends Component {
   render() {
     return (
-      <div> 
-          <div>
-              <div> 
-                  <NavMenu />
-              </div>
-              <div>
-                  { this.props.children }
-              </div>
-          </div>
-      </div>
+      <MuiThemeProvider theme={theme}>
+        <Layout />
+      </MuiThemeProvider>
     );
   }
 }
 
-export default App;
+export default withTheme(theme)(App);
