@@ -5,9 +5,11 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using PrototypeDndWebAPI.Models;
+using System.Web.Http.Cors;
 
 namespace PrototypeDndWebAPI.Controllers
 {
+    [EnableCors(origins: "http://localhost", headers: "*", methods: "*")]
     public class CharacterController : ApiController
     {
         public PrototypeDndWebAPI.Models.CharacterData TestCharacter;
